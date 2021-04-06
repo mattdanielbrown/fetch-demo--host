@@ -5,7 +5,7 @@ let fetchResponse;
 let fetchResponseJson;
 let fetchResponseData;
 const fetchResultDisplay = document.getElementById('fetch-result');
-
+const fetchButton = document.getElementById('make-fetch-request-button');
 
 const fetchData = () => {
 	fetch(targetUrl)
@@ -28,11 +28,13 @@ const fetchData = () => {
 };
 
 /** Main Function Called When Page Finishes Loads / Is Ready **/
-const main = () => {
-	fetchData();
+function main() {
+	fetchButton.addEventListener('click', function () {
+		fetchData();
+	});
 }
 
 /** Script Runtime : Page-Load Finishes And Main Function Is Called **/
 window.addEventListener('DOMContentLoaded', () => {
-	main()
+	main();
 });
