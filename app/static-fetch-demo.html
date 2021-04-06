@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Javascript Fetch API demonstration, the Host side.">
+	  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,shrink-to-fit=no,viewport-fit=cover" />
+    <title>Fetch API Demo (Host Site) | Staic Fetch Demo</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+	  
+    <!-- NAVIGATION BAR ———————————————————————————————————————————————————— -->
+	  <nav role="navigation">
+		  <button type="button" class="nav-menu-button" id="nav-menu-button">
+			  <span class="nav-menu-button-text-content normal-state">Menu</span>
+			  <span class="nav-menu-button-text-content close-state">Close</span>
+		  </button>
+		  <ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="demo.html">Demo</a></li>
+			  <li><a href="static-fetch-demo.html" class="active" aria-current="page">Static Fetch Demo</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="#">Source</a></li>
+		  </ul>
+	  </nav>
+	  
+    <!-- PAGE HEADER ————————————————————————————————————————————————————————-->
+	  <header role="banner">
+		  <hgroup>
+			  <h1>Javascript Fetch API Demo (Host)</h1>
+			  <h2>Static Fetch Demo</h2>
+		  </hgroup>
+	  </header>
+	  
+    <!-- MAIN PAGE CONTENT ————————————————————————————————————————————————— -->
+	  <main role="main">
+		  <section>
+			  <h3>10 Random Movies</h3>
+			  <p>This demo fetches a remote JSON file that contains information about
+			     10 random movies. While the titles and genres should mostly be correct,
+				  the release date, ratings, and other properties were randomly generated
+				  (and, as such, are almost certainly incorrect).</p>
+			  <br>
+			  <hr>
+			  <h4>Filename: <samp>10-random-movies-static.json</samp></h4>
+			  <h4>Source: <samp>https://mdb-fetch-demo-data.netlify.app/10-random-movies-static.json</samp></h4>
+			  <h4><a href="https://mdb-fetch-demo-data.netlify.app/10-random-movies-static.json">Link To File</a></h4>
+		  </section>
+		  
+		  <section>
+			  <h3>The Fetch</h3>
+			  <p>Click the button below to execute the Fetch Request. The result will be output in the area below the button.</p>
+			  <button type="button" class="" id="make-fetch-request-button">Make Fetch Request</button>
+			  <div id="fetch-result-wrapper">
+				  <pre><code id="fetch-result"> . . . (fetch request results will be shown here)</code></pre>
+			  </div>
+		  </section>
+	  </main>
+	  
+    <!-- PAGE FOOTER ————————————————————————————————————————————————————————-->
+	  <footer role="contentinfo">
+		  <p>Copyright &copy; 2021. All Rights Reserved</p>
+	  </footer>
+	  
+    <!-- ==== JAVASCRIPT =================================================== -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

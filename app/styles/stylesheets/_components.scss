@@ -1,0 +1,48 @@
+
+
+#nav-menu-button {
+	.normal-state {
+		display : block;
+	}
+	.close-state {
+		display : none;
+	}
+	&.toggled {
+		.normal-state {
+			display : none;
+		}
+		.close-state {
+			display : block;
+		}
+	}
+}
+nav {
+	transition: all 120ms;
+	* {
+		transition : all 120ms;
+	}
+}
+@media screen and (max-width: 559px) {
+	nav {
+		//height : auto;
+		position : relative;
+		//overflow : hidden;
+	}
+	nav ul {
+		position : relative;
+		//transform: translateY(-100%) scaleY(0);
+		//transform:  scaleY(0);
+		height : 0;
+		visibility : hidden;
+		opacity : 0.0;
+		top : -100%;
+		&.toggled {
+			//transform: translateY(0) scaleY(1);
+			top : 0;
+			//transform: scaleY(1);
+			height : auto;
+			visibility : visible;
+			opacity : 1.0;
+		}
+	}
+}
