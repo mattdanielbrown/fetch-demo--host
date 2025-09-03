@@ -64,7 +64,7 @@
     "bourbon": "^7.0.0",
     "modern-normalize": "^1.0.0",
     "modularscale-sass": "^3.0.10",
-    "prettier": "^2.2.1",
+    "prettier": "^2.8.8",
     "prismjs": "^1.23.0"
   }
 }
