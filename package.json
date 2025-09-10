@@ -29,7 +29,7 @@
     "gulp-useref": "^5.0.0",
     "mocha": "^8.3.2",
     "postcss": "^8.2.9",
-    "yargs": "^16.2.0"
+    "yargs": "^18.0.0"
   },
   "scripts": {
     "serve:test": "cross-env NODE_ENV=test gulp serve",
